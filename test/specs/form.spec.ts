@@ -5,6 +5,7 @@ const screenshots = `./screenshots`;
 describe("auth form", () => {
   it("should deny access with wrong creds", async () => {
     await FormPage.open();
+    await browser.emulateDevice("iPhone 6", true);
     await FormPage.username.setValue("foo");
     await FormPage.password.setValue("bar");
     await FormPage.submit();

@@ -18,6 +18,7 @@
     "@wdio/jasmine-framework": "^8.10.5",
     "@wdio/local-runner": "^8.10.5",
     "@wdio/sauce-service": "^8.10.5",
+    "@wdio/devtools-service": "^8.10.5",
     "@wdio/spec-reporter": "^8.10.5",
     "eslint": "^8.38.0",
     "eslint-config-standard": "^17.0.0",
