@@ -8,3 +8,8 @@ screenshots/*
 
 # node_module
 node_modules/
+
+# logs
+logs/
+
+.DS_Store
