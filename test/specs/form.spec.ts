@@ -19,13 +19,12 @@ describe("auth form", () => {
   it("should allow access with correct creds", async () => {
     await FormPage.open();
     await FormPage.username.setValue("tomsmith");
-    await FormPage.password.saveScreenshot(`${screenshots}/password.png`);
     await FormPage.password.setValue("SuperSecretPassword!");
-    // await FormPage.password.saveScreenshot(`${screenshots}/password.png`);
+    await FormPage.password.saveScreenshot(`${screenshots}/password.png`);
     await FormPage.submit();
 
     await FormPage.flash.waitForDisplayed();
-    await $(".row").saveScreenshot(`${screenshots}/loggedIn.png`);
+    await FormPage.flash.saveScreenshot(`${screenshots}/loggedIn.png`);
     await expect(FormPage.flash).toHaveTextContaining(
       "You logged into a secure area!"
     );
