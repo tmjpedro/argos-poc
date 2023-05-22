@@ -1,0 +1,10 @@
+examples/webdriverIO/.gitignorenode_modules/
+
+# Ignore screenshots
+screenshots/*
+
+# Add screenshots folder (empty)
+!screenshots/.gitkeep
+
+# node_module
+node_modules/
