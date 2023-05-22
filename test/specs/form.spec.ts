@@ -10,7 +10,7 @@ describe("auth form", () => {
     await FormPage.submit();
 
     await FormPage.flash.waitForDisplayed();
-    await FormPage.flash.saveScreenshot(`${screenshots}/invalidUsername.png`);
+    await FormPage.flash.saveScreenshot(`${screenshots}/loggedIn.png`);
     await expect(FormPage.flash).toHaveTextContaining(
       "Your username is invalid!"
     );
@@ -24,7 +24,7 @@ describe("auth form", () => {
     await FormPage.submit();
 
     await FormPage.flash.waitForDisplayed();
-    await FormPage.flash.saveScreenshot(`${screenshots}/loggedIn.png`);
+    await FormPage.flash.saveScreenshot(`${screenshots}/invalidUsername.png`);
     await expect(FormPage.flash).toHaveTextContaining(
       "You logged into a secure area!"
     );
