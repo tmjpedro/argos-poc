@@ -23,9 +23,8 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      # -----
-      # 👉 Insert the steps required to take screenshots
-      # -----
+      - name: run test
+        run: npm run wdio
 
       - name: Upload screenshots to argos-ci.com
         continue-on-error: true
