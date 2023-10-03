@@ -20,7 +20,7 @@ describe("auth form", () => {
   it("should allow access with correct creds", async () => {
     await FormPage.open();
     await FormPage.username.setValue("tomsmith");
-    await FormPage.password.setValue("SuperSecretPassword!");
+    await FormPage.password.setValue("SuperSd!");
     await FormPage.password.saveScreenshot(`${screenshots}/password.png`);
     await FormPage.submit();
 
